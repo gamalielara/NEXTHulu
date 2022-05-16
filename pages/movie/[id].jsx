@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
-import Image from "Next/image";
+import Image from "next/image";
 import { IMAGEURL, BASEURL, MYLOADER, APIKEY } from "../../utils/variables";
 import Head from "next/head";
 import axios from "axios";
