@@ -13,11 +13,15 @@ const Header = () => {
   return (
     <header className="w-full flex flex-col md:flex-row p-5 justify-between items-center">
       <div className="left-section flex flex-grow justify-evenly max-w-2xl">
-        <HeaderItem title="HOME" Icon={HomeIcon} />
-        <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
-        <HeaderItem title="COLLECTION" Icon={CollectionIcon} />
-        <HeaderItem title="SEARCH" Icon={SearchIcon} />
-        <HeaderItem title="ACCOUNT" Icon={UserIcon} />
+        <HeaderItem title="HOME" Icon={HomeIcon} link="/" />
+        <HeaderItem
+          title="TRENDING"
+          Icon={LightningBoltIcon}
+          link="/?genre=trending"
+        />
+        <HeaderItem title="COLLECTION" Icon={CollectionIcon} link="/" />
+        <HeaderItem title="SEARCH" Icon={SearchIcon} link="/search" />
+        <HeaderItem title="ACCOUNT" Icon={UserIcon} link="/" />
       </div>
       <Image
         className="object-contain"
